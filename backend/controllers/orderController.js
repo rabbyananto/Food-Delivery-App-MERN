@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //Placing user oder from frontend
 const placeOrder = async (req, res) => {
- const frontend_url = "http://localhost:5173";
+  const frontend_url = "http://localhost:5173";
 
   try {
     const newOrder = new orderModel({

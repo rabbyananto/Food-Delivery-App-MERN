@@ -16,9 +16,9 @@ const Verify = () => {
       orderId,
     });
     if (response.data.success) {
-      navigate("/ConfirmOrder");
+      navigate("/confirmOrder");
     } else {
-      navigate("/");
+      navigate("/cart");
     }
   };
 

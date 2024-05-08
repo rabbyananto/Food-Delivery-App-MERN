@@ -20,7 +20,7 @@ const MyOrders = () => {
     if (token) {
       fetchOrders();
     }
-  }, []);
+  }, [token]);
 
   return (
     <div className="my-orders">

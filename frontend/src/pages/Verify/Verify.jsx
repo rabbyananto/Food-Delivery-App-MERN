@@ -16,7 +16,7 @@ const Verify = () => {
       orderId,
     });
     if (response.data.success) {
-      navigate("/myorders");
+      navigate("/ConfirmOrder");
     } else {
       navigate("/");
     }

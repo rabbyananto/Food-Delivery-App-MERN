@@ -3,7 +3,7 @@ import "./ConfirmOrder.css";
 import { useNavigate } from "react-router-dom";
 
 const ConfirmOrder = () => {
-  const navigateToHome = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="confirm">
       <div className="confirm-contents">
@@ -13,7 +13,10 @@ const ConfirmOrder = () => {
           there is update on the delivery you will be notified. Thank you for
           your order. Bon appetit 👏🏼 !
         </p>
-        <button onClick={() => navigateToHome("/")}>Homepage</button>
+        <div>
+          <button onClick={() => navigate("/")}>Homepage</button>
+          <button onClick={() => navigate("/myorders")}>My Orders</button>
+        </div>
       </div>
     </div>
   );
